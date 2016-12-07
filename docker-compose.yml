@@ -2,8 +2,10 @@ version: '2'
 
 services:
   zookeep:
-    build: zookeeper_kafka/.
+    build: zookeeper_kafka/
     ports:
-      - 2181:2181
+      - "2181:2181"
   kafka:
-    build: kafka/.
+    build: kafka/
+    ports:
+      - "9092"

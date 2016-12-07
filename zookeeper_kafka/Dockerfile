@@ -13,7 +13,4 @@ RUN chmod a+x /usr/bin/start-kafka.sh
 
 ADD supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-RUN ls /usr/bin/supervisord
-
-EXPOSE 2181 9092
 CMD ["/usr/bin/supervisord"]

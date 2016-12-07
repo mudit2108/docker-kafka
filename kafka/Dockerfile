@@ -13,5 +13,4 @@ ADD scripts/start-kafka.sh /usr/bin/start-kafka.sh
 
 RUN chmod a+x /usr/bin/start-kafka.sh
 
-EXPOSE 9092 2181
 CMD ["start-kafka.sh"]
