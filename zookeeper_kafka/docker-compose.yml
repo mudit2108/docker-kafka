@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  zookeeper:
+    build: .
+  kafka:
+    build: ../kafka/.
